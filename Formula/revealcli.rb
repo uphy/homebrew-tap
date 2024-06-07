@@ -5,20 +5,20 @@
 class Revealcli < Formula
   desc "CLI tool for reveal.js"
   homepage "https://github.com/uphy/go-revealjs"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/uphy/go-revealjs/releases/download/v0.0.3/revealcli-0.0.3-darwin-amd64.tar.gz"
-      sha256 "88ffd34beea2b9ddb9aacca7ac43b5500f0555fe3eecf2c53416d6ec27959e45"
+      url "https://github.com/uphy/go-revealjs/releases/download/v0.0.4/revealcli-0.0.4-darwin-amd64.tar.gz"
+      sha256 "1dbd9121cc987d0927913fdceff2b30e5e3652f4707f9f41308054a33e1d2c31"
 
       def install
         bin.install "revealcli"
       end
     end
     on_arm do
-      url "https://github.com/uphy/go-revealjs/releases/download/v0.0.3/revealcli-0.0.3-darwin-arm64.tar.gz"
-      sha256 "a38c65ff989396e6ba534a2c4bf5025bf23d39f75b7ecca65c4bdf6c62e6c16e"
+      url "https://github.com/uphy/go-revealjs/releases/download/v0.0.4/revealcli-0.0.4-darwin-arm64.tar.gz"
+      sha256 "2638e886b61173c5dcdda636325032e74e734a92906988cdd50c398523c4eaed"
 
       def install
         bin.install "revealcli"
@@ -29,8 +29,8 @@ class Revealcli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/uphy/go-revealjs/releases/download/v0.0.3/revealcli-0.0.3-linux-amd64.tar.gz"
-        sha256 "b2082d52e482e2e910c9d7d61d6b68cba09eb04e9d9a9029a821c9d56b8022bc"
+        url "https://github.com/uphy/go-revealjs/releases/download/v0.0.4/revealcli-0.0.4-linux-amd64.tar.gz"
+        sha256 "9d55cd6bc1c1945b8bfbdce0af3a006257a6a75262d573fc6c711aea791e7e58"
 
         def install
           bin.install "revealcli"
@@ -39,8 +39,8 @@ class Revealcli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/uphy/go-revealjs/releases/download/v0.0.3/revealcli-0.0.3-linux-arm64.tar.gz"
-        sha256 "e98df0d6cf5c6272c4fb66ea38fb8facf9ed20d64cb408027e326d64a5e45720"
+        url "https://github.com/uphy/go-revealjs/releases/download/v0.0.4/revealcli-0.0.4-linux-arm64.tar.gz"
+        sha256 "e50f8ffcefa1e9ec3c30124d487306f1ccefb2de2002365001a33c83b1c41a7b"
 
         def install
           bin.install "revealcli"
