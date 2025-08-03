@@ -5,21 +5,21 @@
 class AgentSync < Formula
   desc "Convert context and command definitions for various AI agents"
   homepage "https://github.com/uphy/agent-sync"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/uphy/agent-sync/releases/download/v0.0.3/agent-sync_0.0.3_darwin_amd64.tar.gz"
-      sha256 "533173c90d2d7f251d8d7a1d413b55dbd88a21de7c88b5113a58237f1a6937cd"
+      url "https://github.com/uphy/agent-sync/releases/download/v0.0.4/agent-sync_0.0.4_darwin_amd64.tar.gz"
+      sha256 "f5cd30363e1838e461d8a5f8fd557de6b5c20594cd612f60cfa35f7f50134ff3"
 
       def install
         bin.install "agent-sync"
       end
     end
     on_arm do
-      url "https://github.com/uphy/agent-sync/releases/download/v0.0.3/agent-sync_0.0.3_darwin_arm64.tar.gz"
-      sha256 "54fce9226c38a0d637f49fb3d049c0b6483bb8eb4a23fafc5431257a0359b4ea"
+      url "https://github.com/uphy/agent-sync/releases/download/v0.0.4/agent-sync_0.0.4_darwin_arm64.tar.gz"
+      sha256 "2b775a5cd00adf470ab40e7b6a7043d6839958543778c5d489e6f781adb09059"
 
       def install
         bin.install "agent-sync"
@@ -30,8 +30,8 @@ class AgentSync < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/uphy/agent-sync/releases/download/v0.0.3/agent-sync_0.0.3_linux_amd64.tar.gz"
-        sha256 "2e287069871c79452203c59dd99d4a759c25ba6e661088e7ac88318e9c0a0e86"
+        url "https://github.com/uphy/agent-sync/releases/download/v0.0.4/agent-sync_0.0.4_linux_amd64.tar.gz"
+        sha256 "035bf969e25d10d767059e96114746417aac9a41fa00d46001ba9808f1881ac5"
 
         def install
           bin.install "agent-sync"
@@ -40,8 +40,8 @@ class AgentSync < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/uphy/agent-sync/releases/download/v0.0.3/agent-sync_0.0.3_linux_arm64.tar.gz"
-        sha256 "bfa8d2e8186db7a70f4afe016c622fe8049c5e492b021d74dff99c8e0bc72860"
+        url "https://github.com/uphy/agent-sync/releases/download/v0.0.4/agent-sync_0.0.4_linux_arm64.tar.gz"
+        sha256 "2522800959c2c8a8a10f5e950101a13b8ca8c71a9a879b2e528a71e3fa4e9fab"
 
         def install
           bin.install "agent-sync"
