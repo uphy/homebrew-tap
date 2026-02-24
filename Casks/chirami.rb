@@ -11,6 +11,12 @@ cask "chirami" do
 
   app "Chirami.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", "com.apple.quarantine", "#{appdir}/Chirami.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/com.uphy.Chirami",
     "~/Library/Preferences/com.uphy.Chirami.plist",
