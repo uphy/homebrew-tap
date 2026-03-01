@@ -10,6 +10,7 @@ cask "chirami" do
   depends_on macos: ">= :sonoma"
 
   app "Chirami.app"
+  binary "#{appdir}/Chirami.app/Contents/MacOS/chirami_bin", target: "chirami"
 
   postflight do
     system_command "/usr/bin/xattr",
