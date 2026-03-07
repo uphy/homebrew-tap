@@ -1,6 +1,6 @@
 cask "chirami" do
-  version "0.0.7"
-  sha256 "2c5473446a0a6d1e62b871e393a455f0c78067d3441f95f63033d07ee5958e07"
+  version "0.0.8"
+  sha256 "d716982574981e6c37f731026115d36210811f345206e1cd0e813002be59e942"
 
   url "https://github.com/uphy/chirami/releases/download/v#{version}/Chirami-#{version}-macOS.zip"
   name "Chirami"
